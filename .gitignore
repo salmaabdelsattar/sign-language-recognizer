@@ -224,4 +224,6 @@ slr-env/
 data/
 models/*.pt
 models/*.task
+models/*.joblib
 .DS_Store
+
