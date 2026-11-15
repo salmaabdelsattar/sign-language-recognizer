@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project
+slr-env/
+data/
+models/*.pt
+models/*.task
+.DS_Store
