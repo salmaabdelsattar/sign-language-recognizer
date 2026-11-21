@@ -60,3 +60,17 @@ python src/live_demo.py
 - [ ] Full ASL alphabet
 - [ ] Arabic Sign Language
 - [ ] Dynamic signs (short words) with a sequence model
+
+
+### Model comparison (leave-one-session-out, 5 letters)
+
+| Model | Session 1 | Session 2 | Session 3 | Session 4 | Mean |
+|---|---|---|---|---|---|
+| Logistic Regression | 1.000 | 0.996 | 0.987 | 0.990 | 0.993 |
+| SVM (RBF) | 0.997 | 0.993 | 0.989 | 0.988 | 0.992 |
+| Random Forest | 0.997 | 0.992 | 0.986 | 0.991 | 0.992 |
+| MLP (PyTorch) | 1.000 | 0.996 | 0.986 | 0.991 | 0.993 |
+
+All four models score within 0.1 percentage points, so the features and data
+collection matter more than the choice of model here. With one signer and five
+distinct letters this test cannot separate them; harder letters and new signers should.
